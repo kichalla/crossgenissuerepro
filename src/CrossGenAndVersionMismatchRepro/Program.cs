@@ -9,6 +9,8 @@ namespace CrossGenAndVersionMismatchRepro
     {
         public static void Main(string[] args)
         {
+            var stackTrace = new System.Diagnostics.StackTrace(new InvalidOperationException(), needFileInfo: false);
+            Console.WriteLine("hello");
         }
     }
 }
